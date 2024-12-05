@@ -1,0 +1,787 @@
+/* Set overarching font styling and background colour as white */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    background-color: #f3f3f3;
+    margin: auto;
+  }
+
+.row {
+    display: flex;
+}
+
+.row h2 {
+    color: #318e88;
+    font-size: 25px;
+}
+  
+  .column {
+    flex: 30%;
+    padding: 3%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+.recipe {
+    flex: 1;
+    display: inline;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+
+.recipe-card h3 {
+    color: #318e88;
+    font-size: 25px;
+}
+
+/* Added media query to adjust the size of the card when the screen size is reduced */
+
+@media screen and (max-width: 776px) {
+    .recipe-card {
+        flex: 0 0 100%; /* Make recipe cards take full width on smaller screens */
+        height: auto;
+    }
+}
+
+/* Left-hand side column in the 'Welcome' section of the index page */
+
+.left {
+    background-color: #fefefe;
+}
+
+/* Right-hand section with image set to cover the section */
+
+.right {
+    background-image: url('images/healthy-meal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.a {
+    background-color: white;
+}
+
+/* Media query to ensure image responsiveness */
+
+@media screen and (max-width: 600px) {
+    .a {
+        width: 440px;
+        height: 315px;
+    }
+}
+
+/* Welcome section styling and alignment with specific styling for text elements */
+
+  .Welcome {
+    background-color: #ffffff;
+    text-align: left;
+    padding: 30px;
+    padding-top: 50px;
+  }
+  
+  .Welcome h1 {
+    font-size: 40px;
+    color: #318e88;
+    margin-bottom: 20px;
+  }
+  
+  .Welcome p {
+    font-size: 25px;
+    color: #318e88;
+  }
+  
+  .Welcome form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .Welcome input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+    max-width: 300px;
+    margin-right: 10px;
+    flex-basis: calc(100% - 110px); /* Set the initial width to take available space */
+  }
+  
+  .Welcome button {
+    padding: 8px 10px;
+    background-color: #318e88;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .Welcome button:hover {
+    background-color: #217872;
+  }
+
+@media (max-width: 768px) {
+.Welcome {
+    text-align: center;
+}
+
+.Welcome form {
+    justify-content: center;
+}
+
+.Welcome input[type="text"] {
+    max-width: none;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+}
+
+/* Styling for secondary navigation */
+
+.secondary-navigation {
+    background-color: #aed3d0;
+    padding: 10px 0;
+  }
+  
+.secondary-navigation ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+}
+
+.secondary-navigation li {
+margin-right: 20px;
+}
+
+.secondary-navigation li:last-child {
+margin-right: 0;
+}
+
+.secondary-navigation a {
+color: #4a4949;
+text-decoration: none;
+padding: 10px 20px;
+}
+
+.secondary-navigation li a:hover {
+color: #09248e;
+text-decoration: none;
+}
+  
+/* Media query to ensure responsive navigation on reduction of screen size */
+
+@media (max-width: 768px) {
+.secondary-navigation ul {
+    flex-wrap: wrap;
+}
+
+.secondary-navigation li {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+}
+
+.secondary-navigation li + li::before {
+content: " | ";
+color: 4a4949;
+}
+  
+  
+/* Primary navigation style for larger screens */
+.top-menu-navigation {
+  background-color: #318e88;
+  padding: 22px 0;
+  position: fixed;
+  width: 100%;
+}
+
+/* Styling for each menu item refering to 'ul' elements */
+
+.top-menu-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: right;
+}
+
+.top-menu-navigation li {
+  margin-right: 20px;
+}
+
+.top-menu-navigation li:last-child {
+  margin-right: 0;
+}
+
+.top-menu-navigation a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.top-menu-navigation li a:hover {
+    color: #09248e;
+    text-decoration: none;
+}
+
+/* Responsive styling for primary navigation */
+
+@media (max-width: 768px) {
+.top-menu-navigation {
+padding: 10px 0;
+position: fixed;
+width: 100%;
+}
+
+.top-menu-navigation ul {
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.top-menu-navigation li {
+margin-right: 10px;
+margin-bottom: 5px;
+margin-top: 5px;
+}
+}
+
+/* Styling for login page and login form */
+
+.Login {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 5px;
+    max-width: 400px;
+    text-align: center;
+    width: 100%;
+}
+  
+.Login h1 {
+margin-bottom: 20px;
+color: #333;
+}
+
+.Login p {
+color: #282828;
+margin: 0;
+margin-top: 10px;
+}
+
+.Login form {
+display: flex;
+flex-direction: column;
+}
+
+.Login div {
+display: flex;
+flex-direction: column;
+margin-bottom: 20px;
+}
+
+.Login label {
+font-weight: bold;
+margin-bottom: 5px;
+color: #555;
+}
+
+.Login input {
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 3px;
+font-size: 16px;
+}
+
+.Login button {
+background-color: #318e88;
+color: #fff;
+border: none;
+padding: 12px 20px;
+font-size: 16px;
+cursor: pointer;
+border-radius: 5px;
+}
+
+/* Slightly darker colour added on button hover to give user visual response */
+
+.Login button:hover {
+background-color: #217872;
+}
+
+/* Styling for signup page, same as for the login page for consistency */
+
+.Signup {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+.Signup h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.Signup form {
+    display: flex;
+    flex-direction: column;
+}
+
+.Signup div {
+    display: flex; /* Flex value added to allow the element to adjust based on content height */
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.Signup label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.Signup input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.Signup button {
+    background-color: #318e88;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.Signup button:hover {
+    background-color: #217872;
+}
+
+main {
+    padding-bottom: 60px;
+  }
+
+.view-recipe-button {
+    padding: 15px 30px;
+    background-color: #318e88;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: right;
+    justify-content: right;
+    align-items: right;
+    margin: auto;
+}
+
+.view-recipe-button:hover {
+    background-color: #217872;
+}
+
+.Login-signup p {
+    color: #323232;
+    font-size: 15px;
+    text-align: left;
+    padding: 5%;
+    padding-top: 0;
+}
+
+@media (max-width: 768px) {
+    .Login-signup p {
+        color: #323232;
+        font-size: 15px;
+        text-align: left;
+        padding: 8%;
+        padding-top: 0;
+    }
+}
+
+.recipe-section-title {
+    font-size: 20px;
+    padding-bottom: 0;
+}
+
+.recipe-section-title h2 {
+    color: #318e88;
+    padding: 4%;
+    padding-bottom: 0;
+}
+
+.recipe-full-page {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 100%;
+    justify-content: space-evenly; /* Ensure even spacing between div elements such as recipe cards */
+    max-width: 600px;
+    margin: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.recipe-full-page h3 {
+    color: #318e88;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.recipe-image {
+    width: 100%;
+    max-height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.save-button,
+.remove-button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #318e88;
+    color: white;
+    border: none;
+    border-radius: 5px; /* Radius value set to add slight curve to buttons */
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.save-button:hover,
+.remove-button:hover {
+    background-color: #217872;
+}
+
+.search-results {
+    display: grid; /* Grid display added which allows multiple recipes to be viewed on one page instead of having to scroll through. Helping with UX and adapting when more recipes are added */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 8%;
+    gap: 5%; /* Setting space between each recipe */
+    grid-row-gap: 0;
+    justify-content: space-between;
+}
+
+/* Identifier of the a href values and setting only them to be viewed with link styling */
+
+.search-results a {
+    text-decoration: none;
+    color: #09248e;
+}
+
+.search-results b {
+    text-decoration: underline; /* For bold text, an underline style has been added to show it is a link */
+    color: #09276e;
+}
+
+.recipe-full-page {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 80%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.recipe-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Set image to cover the full area */
+}
+
+@media screen and (max-width: 768px) {
+    .search-results {
+        grid-template-columns: repeat(1, 1fr); /* Responsive design when search results page is reduced in size */
+        gap: 0.1%; /* Reduce padding when screen size is reduced */
+        padding: 5%;
+    }
+}
+
+.Explore-recipes {
+    height: 300px;
+    align-items: flex-end;
+}
+
+.Recipe-highlight {
+    background-image: url('images/Vegan-Pancakes.jpg'); /* Placeholder image if database images are not loaded */
+    background-size: cover;
+    background-repeat: no-repeat; /* Ensure image does not repeat itself */
+    height: 300px;
+    color: #318e88;
+    padding: 20px;
+}
+
+.footer {
+    background: #318e88;
+    padding: 30px 0px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: white;
+    font-size: 0.8em;
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.footer .row ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer .row ul li {
+    display: inline-block;
+    margin: 0px 10px;
+    position: relative;
+}
+
+.footer .row ul li:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    right: -15px;
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+}
+
+.footer li a:hover {
+    color: #09248e;
+    text-decoration: none;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 3%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 0;
+  }
+  
+.card h1 {
+    color: white;
+    font-size: 30px;
+}
+
+.container {
+    padding: 3%;
+    background-color: #318e88;
+    margin-top: -8px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+.card {
+    background-color: #ffffff;
+    padding: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+    
+.card h1 {
+    color: white;
+    font-size: 30px;
+}
+
+.container {
+    padding: 2px 16px;
+    background-color: #318e88;
+    color: white;
+    margin-top: -5px;
+}
+}
+
+@media screen and (max-width: 768px) {
+    .recipe-grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .small-card {
+        margin: 5%;
+    }
+}
+
+/* Set stying for the primary cards visible across the site */
+
+.small-card {
+    max-width: 500px;
+    margin: 2%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; /* Subtle box shadow to give impression of 3D boxes and add depth to the page */
+    background-color: #318e88;
+}
+
+.small-card img {
+    width: 100%; /* Ensure image takes up the full area */
+}
+
+.small-card h3 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.small-card p {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.small-card b {
+    font-size: 16px;
+    color: #09276e;
+}
+
+.small-container {
+    background-color: #318e88;
+    color: white;
+    padding: 15px;
+    margin-top: -5px;
+}
+
+.recipe-grid-container {
+    display: flex;
+    height: auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.recipe-grid-container a {
+    text-decoration: underline;
+    color: #09276e;
+}
+
+.recipe-details {
+    max-width: 600px;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    color: #000000;
+    justify-content: center;
+    margin: auto;
+}
+
+.recipe-details h1 {
+    color: #217872;
+    font-size: 30px;
+}
+
+.recipe-details h2 {
+    color: #318e88;
+    font-size: 25px;
+}
+
+.recipe-details h3 {
+    color: #318e88;
+    font-size: 20px;
+}
+
+.recipe-details b {
+    color: #09276e;
+    font-size: 18px;
+}
+
+.recipe-image {
+    max-width: 100%;
+    height: 30%;
+}
+
+.steps-section {
+    width: 100%;
+    padding: 2%;
+    margin-top: 2%;
+}
+
+.steps-section ol {
+    margin: 0;
+    padding: 0;
+}
+
+.steps-section li {
+    margin-bottom: 18px;
+}
+
+.details-button {
+    background-color: #318e88;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: auto;
+    display: flex;
+    text-decoration: none; /* Remove underline */
+    width: 100%;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.details-button:hover {
+    background-color: #217872;
+}
+
+.details-button-white {
+    background-color: #ffffff;
+    color: #318e88;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: auto; /* Ensure alignment is in the centre */
+    display: flex;
+    text-decoration: none;
+    width: 80%;
+    text-align: center;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+.details-button-white:hover {
+    background-color: #cbcbcb;
+}
+
+.back-button {
+    background-color: #a1a1a1;
+    color: #1e1e1e;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer; /* Set the cursor to a pointer so the user knows when they are hovering over a button/link */
+    font-size: 16px;
+    display: flex;
+    text-decoration: none;
+    width: 15%;
+    margin: 3%;
+    margin-bottom: 0;
+    border-radius: 5px;
+    justify-content: center; /* Ensure content aligns in the centre of the section */
+}
+
+.back-button:hover {
+    background-color: #757575;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="global.css">
+    <title>Sign up</title>
+</head>
+
+  <body>
+    <section class="Signup">
+        <h1>Sign Up</h1>
+
+        <form action="signup.php" method="post" novalidate>
+            <!--Area to input name-->
+            <div>
+                <label for="name">Name</label>
+                <input type="text" class="name" name="name">
+            </div>
+
+            <!--Area to input email address-->
+            <div>
+                <label for="email">Email address</label>
+                <input type="email" class="email" name="email">
+            </div>
+
+            <!--Area to input password-->
+            <div>
+                <label for="password">Password</label>
+                <input type="password" class="password" name="password">
+            </div>
+
+            <!--Area to confirm password-->
+            <div>
+                <label for="confirm_password">Re-type Password</label>
+                <input type="password" class="confirm_password" name="confirm_password">
+            </div>
+
+            <!--Signup button-->
+            <button>Sign Up</button>
+        </form>
+    </section>
+</body>
+</html>
