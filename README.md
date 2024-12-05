@@ -53,11 +53,5 @@ Each recipe contains:
 - JavaScript must be used for client-side behavior
 - No front-end frameworks are allowed for rendering HTML5 markup
 
-## Repository Structure
-
-- `/src`: Source code for the web application
-- `/database`: MySQL dump files for table structures and sample data
-- `/screenshots`: Screenshots of main page views (including mobile views)
-- `/docs`: Additional documentation (if any)
 
 
